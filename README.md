@@ -15,3 +15,11 @@ Methods we have to code
 - #full_name (interpolate the two table rows together)
 - .all_in_grade (in sql or .where but with conditions)
 - #tenure (conditional find)
+
+
+What changes is a join table.  The students are growing up and having multiple
+teachers per day so our app needs to reflect that there can be multiple teachers.
+We also have to drop a column of teacher_id from students since that is now deprecated.
+
+Left grade_level as a string in student, because who knows if they're in AP math which is a grade above but still in their regular graduation year.  Would need more specifics about where to go with the design.  
+If that's not desired, would just add a column in the grade_level as a string.  
