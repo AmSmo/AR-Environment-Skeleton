@@ -22,4 +22,34 @@ teachers per day so our app needs to reflect that there can be multiple teachers
 We also have to drop a column of teacher_id from students since that is now deprecated.
 
 Left grade_level as a string in student, because who knows if they're in AP math which is a grade above but still in their regular graduation year.  Would need more specifics about where to go with the design.  
-If that's not desired, would just add a column in the grade_level as a string.  
+If that's not desired, would just add a column in the grade_level as a string. 
+
+
+###### FUTURE DELIVERABLES
+
+Student have many subjects through classrooms
+subjects have a classroom (join table with time)
+students have many classrooms
+classrooms have a teacher also through subject 
+
+new classes would be:
+Classroom
+Subject
+SubjectClassroom
+TeacherSubject
+
+additional methods for student would be
+#pick_up_subject
+#drop_subject
+#scheduled_classroom
+#lunch                  (find a NIL value in classroom)
+#shared_lunch           (what other students have that free)
+#share_class(subject)   (has list of students in that class)
+
+
+additional teachers 
+#scheduled_classroom
+#lunch
+#students_in_classroom
+#retire
+.schedule 
