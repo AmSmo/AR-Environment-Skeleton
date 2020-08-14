@@ -47,7 +47,7 @@ additional methods for student would be
 #share_class(subject)   (has list of students in that class)
 
 
-additional teachers 
+additional teachers  functions
 #scheduled_classroom
 #lunch
 #students_in_classroom
